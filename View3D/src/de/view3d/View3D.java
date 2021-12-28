@@ -79,7 +79,6 @@ import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.HierarchyEvent;
@@ -157,6 +156,8 @@ public class View3D extends JPanel implements Scene, Updater, Runnable {
     private boolean inheritNetTransparency = false;
 
     private volatile boolean update = true;
+    
+    private volatile boolean active = true;
 
     public View3D() {
         this(new AttributedString("x"), new AttributedString("y"), new AttributedString("z"), false);
@@ -569,10 +570,16 @@ public class View3D extends JPanel implements Scene, Updater, Runnable {
         }
     }
 
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
     @Override
     public void update(ReadOnlyTimer rot) {
         if (update) {
-            logicalLayer.checkTriggers(rot.getTimePerFrame());
+            if (active){
+                logicalLayer.checkTriggers(rot.getTimePerFrame());
+            }
             root.updateGeometricState(rot.getTimePerFrame(), true);
         }
     }
