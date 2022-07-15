@@ -3,5 +3,5 @@ AutoUpdate-Show-In-Client: true
 OpenIDE-Module: de.view3d/1
 OpenIDE-Module-Layer: de/view3d/layer.xml
 OpenIDE-Module-Localizing-Bundle: de/view3d/Bundle.properties
-OpenIDE-Module-Specification-Version: 1.0.3
+OpenIDE-Module-Specification-Version: 1.0.4
 
