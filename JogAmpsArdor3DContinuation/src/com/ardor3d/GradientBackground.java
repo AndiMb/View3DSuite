@@ -5,6 +5,7 @@
  */
 package com.ardor3d;
 
+import com.ardor3d.framework.jogl.awt.JoglSwingCanvas;
 import com.ardor3d.image.Texture;
 import com.ardor3d.image.util.awt.AWTImageLoader;
 import com.ardor3d.renderer.state.TextureState;
@@ -55,8 +56,12 @@ public class GradientBackground extends Background{
     @Override
     protected void update(){
         
-        int width = Math.max(canvas.getWidth(), 10);
-        int height = Math.max(canvas.getHeight(), 10);
+        float[] pixelScale = new float[]{1.0f, 1.0f};
+        if (canvas instanceof JoglSwingCanvas joglSwingCanvas){
+            pixelScale = joglSwingCanvas.getCurrentSurfaceScale(new float[2]);
+        }
+        int width = (int)(Math.max(canvas.getWidth(), 10) * pixelScale[0]);
+        int height = (int)(Math.max(canvas.getHeight(), 10) * pixelScale[0]);
         backgroundQuad.resize(width, height);
         backgroundQuad.setTranslation(width/2.0, height/2.0, 0.0);
 
