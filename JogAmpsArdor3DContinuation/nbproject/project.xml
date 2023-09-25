@@ -43,6 +43,7 @@
                 <package>com.ardor3d.extension.model.md2</package>
                 <package>com.ardor3d.extension.model.md3</package>
                 <package>com.ardor3d.extension.model.obj</package>
+                <package>com.ardor3d.extension.model.off</package>
                 <package>com.ardor3d.extension.model.ply</package>
                 <package>com.ardor3d.extension.model.stl</package>
                 <package>com.ardor3d.extension.model.util</package>

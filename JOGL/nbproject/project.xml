@@ -8,6 +8,7 @@
             <module-dependencies/>
             <public-packages>
                 <package>com.jogamp.common</package>
+                <package>com.jogamp.common.av</package>
                 <package>com.jogamp.common.jvm</package>
                 <package>com.jogamp.common.net</package>
                 <package>com.jogamp.common.net.asset</package>
@@ -25,6 +26,10 @@
                 <package>com.jogamp.graph.curve.tess</package>
                 <package>com.jogamp.graph.font</package>
                 <package>com.jogamp.graph.geom</package>
+                <package>com.jogamp.graph.geom.plane</package>
+                <package>com.jogamp.graph.ui</package>
+                <package>com.jogamp.graph.ui.layout</package>
+                <package>com.jogamp.graph.ui.shapes</package>
                 <package>com.jogamp.nativewindow</package>
                 <package>com.jogamp.nativewindow.awt</package>
                 <package>com.jogamp.nativewindow.egl</package>
@@ -47,7 +52,6 @@
                 <package>com.jogamp.newt.swt</package>
                 <package>com.jogamp.newt.util</package>
                 <package>com.jogamp.newt.util.applet</package>
-                <package>com.jogamp.oculusvr</package>
                 <package>com.jogamp.openal</package>
                 <package>com.jogamp.openal.eax</package>
                 <package>com.jogamp.openal.sound3d</package>
@@ -73,6 +77,7 @@
                 <package>com.jogamp.opengl.util</package>
                 <package>com.jogamp.opengl.util.av</package>
                 <package>com.jogamp.opengl.util.awt</package>
+                <package>com.jogamp.opengl.util.caps</package>
                 <package>com.jogamp.opengl.util.gl2</package>
                 <package>com.jogamp.opengl.util.glsl</package>
                 <package>com.jogamp.opengl.util.glsl.fixedfunc</package>
@@ -85,6 +90,7 @@
                 <package>com.jogamp.opengl.util.texture.spi</package>
                 <package>com.jogamp.opengl.util.texture.spi.awt</package>
                 <package>jogamp.common</package>
+                <package>jogamp.common.av</package>
                 <package>jogamp.common.jvm</package>
                 <package>jogamp.common.os</package>
                 <package>jogamp.common.os.elf</package>
@@ -95,47 +101,33 @@
                 <package>jogamp.graph.curve.tess</package>
                 <package>jogamp.graph.font</package>
                 <package>jogamp.graph.font.typecast</package>
+                <package>jogamp.graph.font.typecast.cff</package>
                 <package>jogamp.graph.font.typecast.ot</package>
                 <package>jogamp.graph.font.typecast.ot.mac</package>
                 <package>jogamp.graph.font.typecast.ot.table</package>
-                <package>jogamp.graph.font.typecast.t2</package>
                 <package>jogamp.graph.font.typecast.tt.engine</package>
-                <package>jogamp.graph.geom.plane</package>
+                <package>jogamp.graph.ui</package>
+                <package>jogamp.graph.ui.shapes</package>
                 <package>jogamp.nativetag.common.linux.aarch64</package>
                 <package>jogamp.nativetag.common.linux.amd64</package>
                 <package>jogamp.nativetag.common.linux.armv6hf</package>
-                <package>jogamp.nativetag.common.linux.i586</package>
                 <package>jogamp.nativetag.common.macosx.universal</package>
                 <package>jogamp.nativetag.common.windows.amd64</package>
-                <package>jogamp.nativetag.common.windows.i586</package>
-                <package>jogamp.nativetag.oculusvr.linux.aarch64</package>
-                <package>jogamp.nativetag.oculusvr.linux.amd64</package>
-                <package>jogamp.nativetag.oculusvr.linux.armv6hf</package>
-                <package>jogamp.nativetag.oculusvr.linux.i586</package>
-                <package>jogamp.nativetag.oculusvr.macosx.universal</package>
-                <package>jogamp.nativetag.oculusvr.windows.amd64</package>
-                <package>jogamp.nativetag.oculusvr.windows.i586</package>
                 <package>jogamp.nativetag.openal.linux.aarch64</package>
                 <package>jogamp.nativetag.openal.linux.amd64</package>
                 <package>jogamp.nativetag.openal.linux.armv6hf</package>
-                <package>jogamp.nativetag.openal.linux.i586</package>
                 <package>jogamp.nativetag.openal.macosx.universal</package>
                 <package>jogamp.nativetag.openal.windows.amd64</package>
-                <package>jogamp.nativetag.openal.windows.i586</package>
                 <package>jogamp.nativetag.opencl.linux.aarch64</package>
                 <package>jogamp.nativetag.opencl.linux.amd64</package>
                 <package>jogamp.nativetag.opencl.linux.armv6hf</package>
-                <package>jogamp.nativetag.opencl.linux.i586</package>
                 <package>jogamp.nativetag.opencl.macosx.universal</package>
                 <package>jogamp.nativetag.opencl.windows.amd64</package>
-                <package>jogamp.nativetag.opencl.windows.i586</package>
                 <package>jogamp.nativetag.opengl.linux.aarch64</package>
                 <package>jogamp.nativetag.opengl.linux.amd64</package>
                 <package>jogamp.nativetag.opengl.linux.armv6hf</package>
-                <package>jogamp.nativetag.opengl.linux.i586</package>
                 <package>jogamp.nativetag.opengl.macosx.universal</package>
                 <package>jogamp.nativetag.opengl.windows.amd64</package>
-                <package>jogamp.nativetag.opengl.windows.i586</package>
                 <package>jogamp.nativewindow</package>
                 <package>jogamp.nativewindow.awt</package>
                 <package>jogamp.nativewindow.drm</package>
@@ -184,9 +176,6 @@
                 <package>jogamp.opengl.ios.eagl</package>
                 <package>jogamp.opengl.macosx.cgl</package>
                 <package>jogamp.opengl.macosx.cgl.awt</package>
-                <package>jogamp.opengl.oculusvr</package>
-                <package>jogamp.opengl.oculusvr.stereo.lense</package>
-                <package>jogamp.opengl.openal.av</package>
                 <package>jogamp.opengl.util</package>
                 <package>jogamp.opengl.util.av</package>
                 <package>jogamp.opengl.util.av.impl</package>

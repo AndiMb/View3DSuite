@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 AutoUpdate-Show-In-Client: true
 OpenIDE-Module: com.ardor3d/1
-OpenIDE-Module-Implementation-Version: 20210904
+OpenIDE-Module-Implementation-Version: 20230417
 OpenIDE-Module-Localizing-Bundle: com/ardor3d/Bundle.properties
 
