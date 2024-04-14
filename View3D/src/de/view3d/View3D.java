@@ -167,6 +167,7 @@ public class View3D extends JPanel implements Scene, Updater, Runnable {
         this(xLabel, yLabel, zLabel, allowSwitchNet, false);
     }
 
+    @SuppressWarnings("this-escape")
     public View3D(AttributedString xLabel, AttributedString yLabel, AttributedString zLabel, boolean allowSwitchNet, boolean backgroundImageAllowed) {
         System.setProperty("ardor3d.useMultipleContexts", "true");
         System.setProperty("jogl.gljpanel.noglsl", "true");
@@ -949,6 +950,7 @@ public class View3D extends JPanel implements Scene, Updater, Runnable {
 
         private final View3D v3D;
 
+        @SuppressWarnings("this-escape")
         public AdditionalGeometryButton(View3D v3D) {
             super();
             this.v3D = v3D;

@@ -55,6 +55,7 @@ public class Arrow extends Node {
         this(data, new ColorRGBA(1.0f, 0.0f, 0.0f, 1.0f));
     }
 
+    @SuppressWarnings("this-escape")
     public Arrow(ArrowData data, ColorRGBA color) {
         float size = data.getSize();
         int numberOfCones = data.getNumberOfCones();

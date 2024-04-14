@@ -115,6 +115,7 @@ public class RasterTextLabel extends Mesh {
         CapScreenSize;
     }
 
+    @SuppressWarnings("this-escape")
     public RasterTextLabel(AttributedString label,
             Color col,
             double x,

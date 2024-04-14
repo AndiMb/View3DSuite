@@ -25,6 +25,7 @@ public abstract class Background extends Node{
     
     protected final Component canvas;
 
+    @SuppressWarnings("this-escape")
     public Background(Component canvas) {
         super("Background");
         

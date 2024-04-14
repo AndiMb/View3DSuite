@@ -31,7 +31,8 @@ public class ArrowPrimitive extends Node {
     public ArrowPrimitive(final String name) {
         super(name);
     }
-
+    
+    @SuppressWarnings("this-escape")
     public ArrowPrimitive(final String name, double cone_radius, double cone_height, double cylinder_radius, double cylinder_height) {
         super(name);
         this.cone_radius = cone_radius;
@@ -42,7 +43,7 @@ public class ArrowPrimitive extends Node {
         buildArrow();
     }
 
-    public void buildArrow() {
+    private void buildArrow() {
         // Start with cylinders:
         final Cylinder base = new Cylinder("base", 4, 16, cylinder_radius, cylinder_height, true);
         base.getMeshData().rotatePoints(rotator);
