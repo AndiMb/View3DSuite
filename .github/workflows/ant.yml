@@ -21,6 +21,18 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
+    - name: Download and extract NetBeans 26 ZIP distribution
+      shell: bash
+      run: |
+        wget -q https://archive.apache.org/dist/netbeans/netbeans/26/netbeans-26-bin.zip
+        wget -q https://archive.apache.org/dist/netbeans/netbeans/26/netbeans-26-bin.zip.sha512
+        sha512sum -c netbeans-26-bin.zip.sha512
+        unzip -q netbeans-26-bin.zip
     - name: Build with Ant
-      run: ant -noinput -buildfile build.xml build
-      #run: ant -noinput -buildfile build.xml build -Dnbplatform.default.harness.dir=$GITHUB_WORKSPACE/nbmant/harness -Dnbplatform.active.dir=$GITHUB_WORKSPACE/nbmant
+#      run: ant -noinput -buildfile build.xml build
+#      run: ant -noinput -buildfile build.xml build -Dnbplatform.default.harness.dir=$GITHUB_WORKSPACE/nbmant/harness -Dnbplatform.active.dir=$GITHUB_WORKSPACE/nbmant
+      run: >-
+        ant -noinput -buildfile build.xml
+        -Dnbplatform.default.netbeans.dest.dir=${{ github.workspace }}/netbeans
+        -Dnbplatform.default.harness.dir=${{ github.workspace }}/netbeans/harness
+        build
