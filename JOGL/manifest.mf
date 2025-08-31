@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 AutoUpdate-Show-In-Client: true
 OpenIDE-Module: com.jogamp/2
-OpenIDE-Module-Implementation-Version: 20230818
+OpenIDE-Module-Implementation-Version: 20250831
 OpenIDE-Module-Localizing-Bundle: com/jogamp/Bundle.properties
 

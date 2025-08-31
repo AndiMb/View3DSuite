@@ -26,10 +26,14 @@
                 <package>com.jogamp.graph.curve.tess</package>
                 <package>com.jogamp.graph.font</package>
                 <package>com.jogamp.graph.geom</package>
-                <package>com.jogamp.graph.geom.plane</package>
                 <package>com.jogamp.graph.ui</package>
                 <package>com.jogamp.graph.ui.layout</package>
                 <package>com.jogamp.graph.ui.shapes</package>
+                <package>com.jogamp.graph.ui.widgets</package>
+                <package>com.jogamp.math</package>
+                <package>com.jogamp.math.geom</package>
+                <package>com.jogamp.math.geom.plane</package>
+                <package>com.jogamp.math.util</package>
                 <package>com.jogamp.nativewindow</package>
                 <package>com.jogamp.nativewindow.awt</package>
                 <package>com.jogamp.nativewindow.egl</package>
@@ -53,7 +57,6 @@
                 <package>com.jogamp.newt.util</package>
                 <package>com.jogamp.newt.util.applet</package>
                 <package>com.jogamp.openal</package>
-                <package>com.jogamp.openal.eax</package>
                 <package>com.jogamp.openal.sound3d</package>
                 <package>com.jogamp.openal.util</package>
                 <package>com.jogamp.opencl</package>
@@ -71,8 +74,6 @@
                 <package>com.jogamp.opengl.glu</package>
                 <package>com.jogamp.opengl.glu.gl2</package>
                 <package>com.jogamp.opengl.glu.gl2es1</package>
-                <package>com.jogamp.opengl.math</package>
-                <package>com.jogamp.opengl.math.geom</package>
                 <package>com.jogamp.opengl.swt</package>
                 <package>com.jogamp.opengl.util</package>
                 <package>com.jogamp.opengl.util.av</package>
@@ -108,21 +109,25 @@
                 <package>jogamp.graph.font.typecast.tt.engine</package>
                 <package>jogamp.graph.ui</package>
                 <package>jogamp.graph.ui.shapes</package>
+                <package>jogamp.nativetag.common.freebsd.amd64</package>
                 <package>jogamp.nativetag.common.linux.aarch64</package>
                 <package>jogamp.nativetag.common.linux.amd64</package>
                 <package>jogamp.nativetag.common.linux.armv6hf</package>
                 <package>jogamp.nativetag.common.macosx.universal</package>
                 <package>jogamp.nativetag.common.windows.amd64</package>
+                <package>jogamp.nativetag.openal.freebsd.amd64</package>
                 <package>jogamp.nativetag.openal.linux.aarch64</package>
                 <package>jogamp.nativetag.openal.linux.amd64</package>
                 <package>jogamp.nativetag.openal.linux.armv6hf</package>
                 <package>jogamp.nativetag.openal.macosx.universal</package>
                 <package>jogamp.nativetag.openal.windows.amd64</package>
+                <package>jogamp.nativetag.opencl.freebsd.amd64</package>
                 <package>jogamp.nativetag.opencl.linux.aarch64</package>
                 <package>jogamp.nativetag.opencl.linux.amd64</package>
                 <package>jogamp.nativetag.opencl.linux.armv6hf</package>
                 <package>jogamp.nativetag.opencl.macosx.universal</package>
                 <package>jogamp.nativetag.opencl.windows.amd64</package>
+                <package>jogamp.nativetag.opengl.freebsd.amd64</package>
                 <package>jogamp.nativetag.opengl.linux.aarch64</package>
                 <package>jogamp.nativetag.opengl.linux.amd64</package>
                 <package>jogamp.nativetag.opengl.linux.armv6hf</package>
