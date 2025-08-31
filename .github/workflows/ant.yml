@@ -24,7 +24,7 @@ jobs:
     - uses: cjmach/setup-netbeans-action@v2.1
       name: Setup NetBeans distribution
       with:
-        version: '26'
+        version: '27'
     - name: Build with Ant
 #      run: ant -noinput -buildfile build.xml build
       run: >-
